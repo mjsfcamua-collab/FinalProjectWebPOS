@@ -1,38 +1,75 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    display: flex;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fb;
+    color: #2f3a4a;
 }
-.sidebar{
-    background-color: rgb(131, 175, 127);
-    height: 100vh;
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background: linear-gradient(180deg, #5c8a4f 0%, #3d5f3a 100%);
+    color: white;
+    padding: 24px 0;
     position: sticky;
-    width: 220px;
     top: 0;
 }
-.sidebar-header{
+
+.sidebar-header {
     text-align: center;
-    padding: 10px;
-    color: white;
+    padding: 0 24px 20px;
 }
-.sidebar-header h2 a{
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.sidebar-header h2 a {
     text-decoration: none;
     color: white;
 }
-.sidebar-links{
+
+.sidebar-links {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
-.sidebar-links li a{
+
+.sidebar-links li {
+    margin-bottom: 8px;
+}
+
+.sidebar-links li a {
     display: block;
-    padding: 15px 20px;
+    padding: 14px 24px;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.95);
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease;
 }
-.sidebar-links li a:hover{
-    background-color: rgb(77, 104, 75);
+
+.sidebar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
 }
-.mainshift{
+
+.sidebar-links li a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffffff;
+    /* border when selected */
+    font-weight: bold;
+}
+
+.mainshift {
     padding: 20px;
 }

@@ -58,10 +58,16 @@ body {
     transition: all 0.2s ease;
 }
 
-.sidebar-links li a:hover,
+.sidebar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+}
+
 .sidebar-links li a.active {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-left-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #ffffff;
+    /* border when selected */
+    font-weight: bold;
 }
 
 .content {
@@ -322,11 +328,9 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
-
     .action-buttons {
         justify-content: stretch;
     }
-
     .stock-modal-content,
     .product-modal-content,
     .edit-modal-content {
@@ -468,12 +472,10 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
-
     .sidebar {
         width: 100%;
         position: relative;
     }
-
     .page-container {
         flex-direction: column;
     }
@@ -483,11 +485,9 @@ body {
     .sidebar-links li a {
         padding: 12px 18px;
     }
-
     .content {
         padding: 18px;
     }
-
     .inventory-card,
     .inventory-table,
     .stock-modal-content,

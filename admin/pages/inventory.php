@@ -20,7 +20,7 @@ if($_SESSION['role'] != 'admin'){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/stockstyle.css">
+    <link rel="stylesheet" href="./css/stockstyle.css?v=2">
 
 </head>
 <body>
@@ -32,8 +32,8 @@ if($_SESSION['role'] != 'admin'){
                 <h2><a href="../admin.php">MERKADO</a></h2>
             </div>
             <ul class="sidebar-links">
-                <li><a href="dashboard.php">Dashboard</a></li>
-                <li><a href="inventory.php">Inventory</a></li>
+                <li><a href="dashboard.php" >Dashboard</a></li>
+                <li><a href="inventory.php"class ="active">Inventory</a></li>
                 <li><a href="customers.php">Customers</a></li>
                 <li><a href="accounts.php">Accounts</a></li>
                 <li><a href="assets/adminlogout.php">Log Out</a></li>

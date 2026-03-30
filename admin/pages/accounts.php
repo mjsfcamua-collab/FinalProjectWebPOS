@@ -18,25 +18,25 @@ if($_SESSION['role'] != 'admin'){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/accountsstyle.css">
+    <link rel="stylesheet" href="css/accountsstyle.css?v=2">
 </head>
 <body>
-
-        <div class="sidebar">
-            <div class="sidebar-header">
-                <h2><a href="../admin.php">MERKADO</a></h2>
-            </div>
-                <ul class="sidebar-links">
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="inventory.php">Inventory</a></li>
-                    <li><a href="customers.php">Customers</a></li>
-                    <li><a href="accounts.php">Accounts</a></li>
-                    <li><a href="assets/adminlogout.php">Log Out</a></li>
-                </ul>
-        </div>
-
-        <div class="mainshift">
-            <h1>Welcome to Account Page</h1>
+<div class="page-container">
+        <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2><a href="../admin.php">MERKADO</a></h2>
+                </div>
+                    <ul class="sidebar-links">
+                        <li><a href="dashboard.php">Dashboard</a></li>
+                        <li><a href="inventory.php">Inventory</a></li>
+                        <li><a href="customers.php">Customers</a></li>
+                        <li><a href="accounts.php"class ="active">Accounts</a></li>
+                        <li><a href="assets/adminlogout.php">Log Out</a></li>
+                    </ul>
+        </aside>
+    
+            <div class="mainshift">
+                <h1>Welcome to Account Page</h1>
             
             <table border = 1>
                 <tr>
